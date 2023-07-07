@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL shortener</title>
+</head>
+<body>
+    <form class="form" action="" method="POST">
+        <h1>Shorten your URL:</h1>
+        <div class="input">
+            <label class="text" for="">Enter your link:</label><br>
+            <input class="textbox" type="text" placeholder="https://thoweb.nl" value="https://"><br>
+            <input class="button" type="submit" value="Shorten link">
+        </div>
+    </form>
+    <div id="output"></div>
+</body>
+</html>
+<style>
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-repeat: no-repeat;
+}
+.form{
+    background-color: #fff7ff;
+    box-shadow: 1px 1px black;
+    margin: 25vh 35vw;
+    border-radius: 12px;
+    height: 50vh;
+}
+.form h1{
+    padding: 10px 0px 30px 0px;
+    text-align: center;
+}
+.input{
+    padding-left: 3vw;
+}
+.input input{
+    margin: 5px 0px;
+}
+.textbox{
+    width: 80%;
+    padding: 2px;
+
+}
+.textbox:focus{
+    outline: none;
+}
+.button{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .5s all;
+}
+.button:hover{
+    box-shadow: 2px 2px black;
+}
+
+</style>
